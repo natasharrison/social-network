@@ -1,0 +1,26 @@
+{
+  "name": "nosql",
+  "version": "1.0.0",
+  "description": "Social Network back end for a social media startup that uses a NoSQL database in order for the site to utilize large amounts of unstructured data.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.13.2",
+    "nosql": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natasharrison/social-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natasharrison/social-network/issues"
+  },
+  "homepage": "https://github.com/natasharrison/social-network#readme"
+}

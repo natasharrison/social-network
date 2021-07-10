@@ -1,3 +1,14 @@
+const { Schema, model } = require('mongoose');
+
+const UserSchema = new Schema({
+    username: {
+        type: String, 
+        // unique
+        // required 
+        // trimmed 
+        // email 
+    }
+})
 // username
 // String
 // Unique
