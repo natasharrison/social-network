@@ -80,8 +80,14 @@ const userController = {
     }, 
 
     // post to add a new friend to user's friend list
+    // addFriend({})
+    // find by id
+    // $push 
 
     // delete to remove a friend from a user's friend list
+    // removeFriend({ })
+    // find by id
+    //  $pull
 };
 
 module.exports = userController;

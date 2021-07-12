@@ -11,11 +11,13 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
-//   useFindAndModify: false,
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// });
+// connecting mongoose to mongodb 
+// did I already create the database called 'social network'?
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network', {
+  useFindAndModify: false,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 // Use this to log mongo queries being executed!
 mongoose.set('debug', true);

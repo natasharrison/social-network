@@ -10,7 +10,7 @@ const {
 
 // set up GET all and POST at /api/users
 router
-    .router('/')
+    .route('/')
     .get(getAllUsers)
     .post(createUser);
 
@@ -22,10 +22,10 @@ router
     .delete(deleteUserById);
 
 // set up POST and DELETE at /api/users/:userId/friends/:friendId
-router 
-.route('/:userId/friends/:friendId')
-.post()
-.delete();
+router
+    .route('/:userId/friends/:friendId')
+    .post()
+    .delete();
 
 
 module.exports = router;
