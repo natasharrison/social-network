@@ -10,6 +10,9 @@ const {
     createReaction
 } = require('../../controllers/thought-controller');
 
+// api/thoughts
+// router.route('/thoughts').post(addThought);
+
 // api/thoughts/<userId>
 router.route('/:userId').post(addThought);
 
