@@ -20,13 +20,11 @@ const thoughtController = {
     // get a single thought by id 
     getThoughtById({ params }, res) {
         Thought.findOne({ _id: params.id })
-            .populate(
-                {
-                    path: 'thought',
-                    select: '-__v'
-                }
-            )
-            .select('-__v')
+            // .populate({
+            //         path: 'Thought',
+            //         select: '-__v'
+            //     })
+            // .select('-__v')
             .then(dbUserData => {
                 // if no user is found, send 404
                 if (!dbUserData) {

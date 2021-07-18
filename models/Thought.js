@@ -55,6 +55,7 @@ const ThoughtSchema = new Schema({
     }
 );
 
+// If this is uncommented, I can't get the thought routes to work
 // create a virtual called reactionCount that retrieves the length of the thought's reaction array field on query
 // ThoughtSchema.virtual('reactionCount').get(function () {
 //     return this.reactions.length;
