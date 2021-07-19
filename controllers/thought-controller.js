@@ -61,7 +61,7 @@ const thoughtController = {
     }, 
     // put to update a thought by id
     updateThought({ params, body}, res){
-        Thought.findOneAndUpdate({ _id: params.userId}, body, {new:true})
+        Thought.findOneAndUpdate({ _id: params.thoughtId}, body, {new:true})
         .then(dbUserData => {
             if (!dbUserData){
                 res.status(404).json({ message: 'No thought found by this id'});
