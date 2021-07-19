@@ -1,6 +1,7 @@
 # Social Network Back End
 
 ## Description
+
 Social Network back end for a social media startup that uses a NoSQL database in order for the site to utilize large amounts of unstructured data.
 
 ## Built With
@@ -11,20 +12,20 @@ Social Network back end for a social media startup that uses a NoSQL database in
 
 ## Usage
 
-- Input MySQL username and password within .env file
-- npm run seed
-- npm start
+- run Mongo
+- npm start to get server up and running
 - Ability to test routes using Insomnia
 
 ## Repository
 
-[GitHub] https://github.com/natasharrison/social-network.git 
-[Screencastify] 
+[GitHub] https://github.com/natasharrison/social-network.git
+[Screencastify] <iframe src="https://drive.google.com/file/d/1zJR-WgVnT6B7oHdDYWUv0XUOzFQuh4R2/preview" width="640" height="480"></iframe>
 
 ## Contributing
 
 - Natasha Harrison @natasharrison
+- Bootcamp for DateFormat file from Module 18 Pizza-Hunt example
 
 ## Future Development / Bugs
 
-[] 
+[] fix virtuals for reactions and friends
