@@ -78,12 +78,15 @@ const thoughtController = {
             .then(deleteThought => {
                 if (!deleteThought) {
                     return res.status(404).json({ message: 'No thought found with this id' });
+                    return;
                 }
-                return Thought.findOneAndUpdate(
-                    { _id: params.thoughtId },
-                    { $pull: { thought: params.thoughtId } },
-                    { new: true }
-                );
+                res.json(deleteThought);
+                // return 
+                // // Thought.findOneAndUpdate(
+                // //     { _id: params.thoughtId },
+                // //     { $pull: { thought: params.thoughtId } },
+                // //     { new: true }
+                // // );
             })
             .catch(err => res.json(err));
     }, 
